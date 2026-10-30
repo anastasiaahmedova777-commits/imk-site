@@ -67,12 +67,14 @@ function checkOtveti(){
     let otveti = this.parentNode
     let nomer_voprosa = otveti.id.slice(1)
     let truth = ishodnijeVoprosi[nomer_voprosa].truth
+    console.log(otveti.children)
     for (let w in otveti.children){ 
-        if (this.id.slice(-1) == truth){
-            this.id = 'good'
+        console.log(otveti.children[w])
+        if (otveti.children[w].id.slice(-1) == truth){
+            otveti.children[w].id = 'good'
         }
         else{
-            this.id = 'bad'        
+            otveti.children[w].id = 'bad'        
         }   
         otveti.children[w].onclick = null
     }
