@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.poloska {
+  background: #40506a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  color: #fff;
+  height: 50px;
+}
+.poloska a{
+  color: white;
+  text-decoration: none;
+}
+
+.poloska log {
+  font-size: 50px;
+  font-weight: bold;
+}
+main {
+  flex: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  width: 100%;
+  text-align: center;
+}
+main h1 {
+  font-size: 32;
+  margin-bottom: 12px;
+  flood-color: #40506a;
+}

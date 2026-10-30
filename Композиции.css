@@ -1,0 +1,78 @@
+.musicbox {
+  min-width: max-content;
+  display: flex;
+  flex-direction: column;
+  border: 5px solid #40506a;
+  border-radius: 20px;
+  min-height: 13vh;
+  height: max-content;
+  width: 25vw;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+form{
+  padding: 30px 30px;
+  width: 100%;
+    display: grid;
+    grid-template-columns: auto max-content;
+  gap: 5px;
+
+& #search{
+     
+    font-size: 30px;
+    border-radius: 20px;
+    border: 3px solid #40506a;
+    width: 100%;
+    padding: 10px 20px;
+}
+& #button_search{
+    border-radius: 20px;
+  font-size: 30px;
+  padding: 0px 20px ;
+}
+}
+
+.musicbox:hover {
+  color:#b42d4f
+}
+.musicsklad {
+  display: flex;
+  width: 100%;
+  padding: 30px 30px;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.compozitor {
+  font-weight: bolder;
+  text-align: center;
+}
+hr {
+  border: 1px solid #40506a;
+}
+.opisanie{
+  padding:5px;
+  width: 100%;
+}
+.name{
+  text-align: center;
+  height:  3rem;
+  max-width: calc(100vw - 100px);
+  text-wrap: wrap;
+}
+
+@media screen and (min-width: 900px) {
+  .opisanie{
+    max-width: 25vw !important;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .opisanie{
+    width: calc(100vw - 100px)  !important;
+  }
+
+}

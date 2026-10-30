@@ -1,0 +1,25 @@
+.knopki {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  padding: 30px 30px;
+}
+.knopki a {
+  display: flex;
+  background: #fff;
+  border: 5px solid #40506a;
+  border-radius: 20px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+.knopki a:hover{
+  color:#b42d4f
+}
+hr{
+   border: 1px solid #40506a;
+}
