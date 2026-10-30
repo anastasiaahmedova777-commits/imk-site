@@ -66,6 +66,7 @@ function createVoprosi(){
 function checkOtveti(){
     let otveti = this.parentNode
     let nomer_voprosa = otveti.id.slice(1)
+    //смпро
     let truth = ishodnijeVoprosi[nomer_voprosa].truth
     for (let w in otveti.children){    
         otveti.children[w].onclick = null
