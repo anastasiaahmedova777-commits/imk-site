@@ -58,18 +58,22 @@ function checkOtveti(){
     let otveti = this.parentNode
     let nomer_voprosa = otveti.id.slice(1)
     let truth = ishodnijeVoprosi[nomer_voprosa].truth
-    console.log(otveti.children)
     for (let w in otveti.children){ 
-        console.log(otveti.children[w])
-        if (otveti.children[w].id.slice(-1) == truth){
-            otveti.children[w].id = 'good'
-        }
-        else{
-            otveti.children[w].id = 'bad'        
-        }   
-        otveti.children[w].onclick = null
+       otveti.children[w].onclick = null
     }
 
-}
+    if (this.id.slice(-1) == truth){
+        this.id = 'good'
+    }
+    else{
+            let tn = this.id.slice(0,-1)+truth
+            this.id = 'bad'
+            
+            console.log(tn)
+            document.getElementById(tn).id = 'good'            
+        }
+    }
+
+
 
 
