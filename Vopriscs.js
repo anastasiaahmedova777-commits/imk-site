@@ -72,6 +72,7 @@ function checkOtveti(){
             console.log(tn)
             document.getElementById(tn).id = 'good'            
         }
+    otveti.style.pointerEvents = 'none'
     }
 
 
