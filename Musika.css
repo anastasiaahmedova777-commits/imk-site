@@ -60,7 +60,7 @@ audio {
     box-sizing: border-box;
     overflow-wrap: break-word;
     hyphens: auto;
-    font-size: 16px;
+    font-weight: 400;
   }
   
 #bad {

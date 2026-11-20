@@ -81,6 +81,8 @@ hr {
   height:  3rem;
   max-width: calc(100vw - 100px);
   text-wrap: wrap;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 @media screen and (min-width: 900px) {
