@@ -47,6 +47,7 @@ vl {
     padding: 10px;
     height: auto;
     overflow-wrap: break-word;
+    font-weight: 400;
   }
 
   @media (max-width: 768px) {
