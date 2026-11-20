@@ -1,15 +1,35 @@
+
 .musicbox {
-  min-width: max-content;
   display: flex;
   flex-direction: column;
-  border: 5px solid #40506a;
-  border-radius: 20px;
-  min-height: 13vh;
-  height: max-content;
-  width: 25vw;
   align-items: center;
   justify-content: center;
+  width: 25vw;
+  min-width: 260px;
+  height: auto;
+  padding: 10px 14px;
+  gap: 6px;
+  border: 4px solid #40506a;
+  border-radius: 20px;
   background-color: white;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .musicbox {
+    width: 92vw;
+    min-width: unset;
+    padding: 10px 12px;
+    border-width: 3px;
+    border-radius: 16px;
+    gap: 6px;
+  }
+
+  audio {
+    width: 100%;
+    height: 36px;
+  }
 }
 form{
   padding: 30px 30px;
