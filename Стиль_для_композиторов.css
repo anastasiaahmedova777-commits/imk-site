@@ -165,10 +165,51 @@ em {
 }
 
 @media (max-width: 600px) {
-  .wiki-infobox {
-    float: none;
+  html, body {
+    padding: 20px 10px; 
     width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+    display: block;
+  }
+
+  .white-card {
+    padding: 25px 18px; 
+    border-radius: 12px;
+    width: 100;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  h1 {
+    font-size: 1.8rem; 
+    word-wrap: break-word;
+  }
+
+  h2 {
+    font-size: 1.35rem;
+    margin-top: 28px;
+  }
+
+  p {
+    text-align: left;
+  }
+
+  .wiki-infobox {
+    float: none; 
+    width: 100%; 
     margin-left: 0;
     margin-bottom: 24px;
+    box-sizing: border-box;
+  }
+
+  .infobox-row {
+    flex-direction: column; 
+    gap: 2px;
+  }
+
+  .infobox-value {
+    text-align: left;
   }
 }
