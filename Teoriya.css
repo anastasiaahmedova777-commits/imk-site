@@ -49,6 +49,8 @@ vl {
     overflow-wrap: break-word;
     font-weight: 400;
     -webkit-appearence: none;
+    appearance: none;
+    color: rgb(10, 10, 10)
   }
 
   @media (max-width: 768px) {
