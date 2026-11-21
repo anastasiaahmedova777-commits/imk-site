@@ -45,7 +45,6 @@ function createVoprosi(){
             variant.innerHTML = voprosi[i].answers[j]
             variant.id = 'q'+i+'a'+(parseInt(j) +1).toString()
             variant.onclick = checkOtveti
-            variant.ontouchend = checkOtveti
             otvetik.appendChild(variant)
 
         }
